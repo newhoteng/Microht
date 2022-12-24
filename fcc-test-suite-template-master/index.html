@@ -13,8 +13,24 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Microverse trials form.</p>
     <form id="survey-form">
-      <input id="name" type="text" required/>
-      <input id="email" type="email" required/>
+      <input id="name" type="text" required placeholder="Enter your name"/>
+      <input id="email" type="email" required placeholder="Enter your email"/>
+      <input id="number" type ="number" max = "100" min = "18" placeholder="Age"/>
+      <label for="name" id = "name-label">Name</label>
+      <label for="email" id = "email-label" >Email</label>
+      <label for="number" id = "number-label">Age</label>
+      <select name="" id="dropdown">
+        <option>Student</option>
+        <option>Full Time Job</option>
+      </select>
+      <label class="gap"><input type="radio" name="recommend" value="definately" class="inline">Definately</label>
+      <label class="gap"><input type="radio" name="recommend" value="maybe" class="inline">Maybe</label>
+      <label class=""><input type="radio" name="recommend" value="not sure" class="inline">Not sure</label>
+      <label class="gap"><input type="checkbox" name="" value="fe" class="inline">Front-end Projects</label>
+      <label class="gap"><input type="checkbox" name="" value="be" class="inline">Back-end Projects</label>
+      <label class="gap"><input type="checkbox" name="" value="dv" class="inline">Data Visualization</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" id="submit">
     </form>
     <script  src="js/index.js"></script>
   </body>
